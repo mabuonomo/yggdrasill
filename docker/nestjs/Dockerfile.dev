@@ -4,3 +4,20 @@ EXPOSE 3000 6379 50051 8080 4200
 RUN npm install -g typescript ts-node ts-node-dev @nestjs/cli npm-check-updates npm @prisma/cli @angular/cli
 
 RUN apk -U --no-cache add git openssh protobuf protobuf-dev
+
+RUN npm install -g npm
+
+RUN npm install -g ts-proto
+
+## install go
+RUN apk add --no-cache git make musl-dev go
+
+# Configure Go
+ENV GOROOT /usr/lib/go
+ENV GOPATH /go
+ENV PATH /go/bin:$PATH
+
+RUN mkdir -p ${GOPATH}/src ${GOPATH}/bin
+RUN go get github.com/globalsign/mgo/bson
+RUN go get -u github.com/amsokol/protoc-gen-gotag
+RUN go get -u github.com/amsokol/mongo-go-driver-protobuf

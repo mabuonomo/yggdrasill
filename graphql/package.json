@@ -1,0 +1,26 @@
+{
+  "name": "saga-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/vivus1/saga-graphql.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/vivus1/saga-graphql/issues"
+  },
+  "homepage": "https://gitlab.com/vivus1/saga-graphql#readme",
+  "dependencies": {
+    "@nestjs/common": "^7.2.0",
+    "@nestjs/core": "^7.2.0",
+    "@nestjs/graphql": "^7.4.1",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.5.5"
+  }
+}

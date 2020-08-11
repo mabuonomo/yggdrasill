@@ -1,0 +1,25 @@
+FROM node:11-alpine
+
+RUN npm install -g npm
+
+RUN npm install -g typescript
+
+RUN npm install -g ts-proto
+
+RUN apk -U --no-cache add protobuf protobuf-dev
+
+# ncu -u
+RUN npm install -g npm-check-updates
+
+## install go
+RUN apk add --no-cache git make musl-dev go
+
+# Configure Go
+ENV GOROOT /usr/lib/go
+ENV GOPATH /go
+ENV PATH /go/bin:$PATH
+
+RUN mkdir -p ${GOPATH}/src ${GOPATH}/bin
+RUN go get github.com/globalsign/mgo/bson
+RUN go get -u github.com/amsokol/protoc-gen-gotag
+RUN go get -u github.com/amsokol/mongo-go-driver-protobuf

@@ -1,0 +1,21 @@
+FROM node:13-alpine
+EXPOSE 50051
+
+RUN npm install -g typescript npm @prisma/cli
+
+RUN apk -U --no-cache add git openssh protobuf protobuf-dev
+
+WORKDIR /app
+
+COPY . /app
+
+RUN npm ci
+RUN npx prisma generate --schema ./atena-prisma/prisma/schema.prisma
+
+# RUN npm run build
+
+# RUN rm -R src
+
+# CMD ["npm", "run", "start:prod"]
+
+CMD ["npm", "run", "start"]

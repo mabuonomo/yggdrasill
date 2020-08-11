@@ -1,0 +1,25 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: nestjs-deployment
+spec:
+  selector:
+    matchLabels:
+      app: nestjs
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: nestjs
+    spec:
+      containers:
+      - name: nestjs
+        image: registry.gitlab.com/vivus1/andromeda-here:latest
+        ports:
+        - containerPort: 50051
+        resources:
+          limits:
+            cpu: 500m
+            memory: 128Mi
+      imagePullSecrets:
+        - name: registry.gitlab.com # tutorial secret on gdrive

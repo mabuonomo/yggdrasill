@@ -1,0 +1,6 @@
+FROM node:13-alpine
+EXPOSE 3000 6379 50051 8080 4200
+
+RUN npm install -g typescript ts-node ts-node-dev @nestjs/cli npm-check-updates npm @prisma/cli @angular/cli
+
+RUN apk -U --no-cache add git openssh protobuf protobuf-dev

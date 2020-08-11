@@ -1,12 +1,12 @@
 npm_init:
-	${docker} ${project} npm install
+	${docker}${container} npm ci
 
 npm_format:
-	${docker} ${project} npm run format
-	${docker} ${project} npm run lint:fix
+	${docker}${container} npm run format
+	${docker}${container} npm run lint:fix
 
 npm_update:
-	${docker} ${project} ncu -u
+	${docker}${container} ncu -u
 	make npm_init
 
 

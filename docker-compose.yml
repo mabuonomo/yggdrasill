@@ -8,7 +8,5 @@ services:
       dockerfile: Dockerfile.dev
     volumes:
       - ./:/app
-      - ./graphql:/graphql
-      - ./grpc/proto:/proto
     working_dir: /app
       

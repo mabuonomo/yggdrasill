@@ -1,9 +1,11 @@
-prisma_install:
-	${docker} ${project} npm install @prisma/cli --save-dev
+schemaPath = ./prisma/schema/schema.prisma
+
+prisma_install_cli:
+	${docker} ${container} npm install @prisma/cli --save-dev
 
 prisma_generate:
-	${docker} ${project} npx prisma generate --schema ./atena-prisma/prisma/schema.prisma
+	${docker} ${container} ./node_modules/.bin/prisma generate --schema ${schemaPath}
 
 prisma_migrate:
-	${docker} ${project} npx prisma migrate save --experimental --schema ./atena-prisma/prisma/schema.prisma
-	${docker} ${project} npx prisma migrate up --experimental --schema ./atena-prisma/prisma/schema.prisma
+	${docker} ${container} ./node_modules/.bin/prisma migrate save --experimental --schema ${schemaPath}
+	${docker} ${container} ./node_modules/.bin/prisma migrate up --experimental --schema ${schemaPath}

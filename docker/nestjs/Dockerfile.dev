@@ -21,3 +21,5 @@ RUN mkdir -p ${GOPATH}/src ${GOPATH}/bin
 RUN go get github.com/globalsign/mgo/bson
 RUN go get -u github.com/amsokol/protoc-gen-gotag
 RUN go get -u github.com/amsokol/mongo-go-driver-protobuf
+
+RUN npm install -g @prisma/cli

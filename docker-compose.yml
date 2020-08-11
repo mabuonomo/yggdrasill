@@ -8,5 +8,6 @@ services:
       dockerfile: Dockerfile.dev
     volumes:
       - ./:/app
+      - ./prisma:/prisma
     working_dir: /app
       

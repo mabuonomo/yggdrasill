@@ -1,4 +1,4 @@
 graphql_build:
-	cd ./graphql && \
-	${docker} generic npm install && \
-	${docker} generic ts-node ./generate-typings
+	# cd ./graphql && 
+	${docker} ${container} npm ci && \
+	${docker} ${container} ts-node /graphql/generate-typings

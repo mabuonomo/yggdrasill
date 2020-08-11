@@ -1,5 +1,5 @@
-docker = docker-compose run --rm
-project = here_node
+docker = docker-compose run 
+container = utils
 
 include makefiles/prisma.mk
 include makefiles/npm.mk

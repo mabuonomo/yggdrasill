@@ -4,9 +4,11 @@ services:
   utils:
     container_name: utils
     build:
-      context: docker
-      dockerfile: nestjs/Dockerfile.dev
+      context: docker/nestjs
+      dockerfile: Dockerfile.dev
     volumes:
-      - .:/app
+      - ./:/app
+      - ./graphql:/graphql
+      - ./grpc/proto:/proto
     working_dir: /app
       

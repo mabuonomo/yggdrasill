@@ -1,21 +1,21 @@
 {
-  "name": "saga-graphql",
+  "name": "utils",
   "version": "1.0.0",
-  "description": "",
+  "description": "# GRPC folder -> From protobuf .proto files to NestJS interfaces",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/vivus1/saga-graphql.git"
+    "url": "git+https://github.com/mabuonomo/utils.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/vivus1/saga-graphql/issues"
+    "url": "https://github.com/mabuonomo/utils/issues"
   },
-  "homepage": "https://gitlab.com/vivus1/saga-graphql#readme",
+  "homepage": "https://github.com/mabuonomo/utils#readme",
   "dependencies": {
     "@nestjs/common": "^7.2.0",
     "@nestjs/core": "^7.2.0",

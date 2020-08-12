@@ -6,7 +6,12 @@ Yggdrasill is a super set of tools that simplify development and deployment in a
 
 What's Yggdrasill? Yggdrasil (from Old Norse Yggdrasill) is an immense mythical tree that plays a central role in Norse cosmology, where it connects the Nine Worlds. (https://en.wikipedia.org/wiki/Yggdrasil).
 
-The purpose of this repository is to unify and simplify the use of some very useful tools, such as Prisma, GRPC, GraphQL, Kubernetes etc.
+The purpose of this repository is to unify and simplify the use of some very useful tools, such as:
+* Prisma (https://www.prisma.io/)
+* GRPC (https://grpc.io/)
+* GraphQL (https://graphql.org/)
+* Kubernetes (https://kubernetes.io/it/)
+* and more ("Nine Worlds" remember?)
 
 ## 🏁 Quick start
 Clone this repository into the root of the your project, as git submodule
@@ -86,6 +91,8 @@ If you want to create and apply the migration at your database:
 ```sh
 cd yggdrasill && make prisma_migrate
 ```
+
+Do you use Nestjs? Read https://docs.nestjs.com/recipes/prisma
 
 # GRPC folder -> From protobuf .proto files to NestJS interfaces
 

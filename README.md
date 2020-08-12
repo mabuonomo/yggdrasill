@@ -35,7 +35,7 @@ Some examples of integration
 
 ---
 
-## Prisma
+### Prisma
 
 _Create client and migration from a schema.prisma file_
 
@@ -116,7 +116,7 @@ Do you use Nestjs? Read https://docs.nestjs.com/recipes/prisma
 
 ---
 
-## GraphQL
+### GraphQL
 
 _Create NestJS's interfaces from \*.graphql files_
 
@@ -199,7 +199,7 @@ Do you use Nestjs? Read https://docs.nestjs.com/graphql/quick-start
 
 ---
 
-## Grpc
+### Grpc
 
 _Create NestJS's interfaces from \*.proto files_
 

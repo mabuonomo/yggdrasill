@@ -31,11 +31,9 @@ git submodule add git@github.com:mabuonomo/yggdrasill.git
 
 ## 🚀 Integration
 
-Some examples of integration
-
 ---
 
-### Prisma
+## Prisma
 
 _Create client and migration from a schema.prisma file_
 

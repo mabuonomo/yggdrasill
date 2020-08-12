@@ -1,8 +1,8 @@
 nest_start:
-	${dockerMain} ${container} npm run start
+	@${dockerMain} --service-ports ${container} npm run start
 
 nest_debug:
-	${dockerMain} ${container} npm run start:debug
+	@${dockerMain} --service-ports ${container} npm run start:debug
 
 nest_test:
-	${dockerMain} ${project} npm run test
+	@${dockerMain} ${project} npm run test

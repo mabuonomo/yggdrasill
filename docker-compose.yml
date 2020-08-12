@@ -11,4 +11,5 @@ services:
       - ./prisma:/prisma
       - ../:/main # <- main project that include this
     working_dir: /app
-      
+    ports:
+      - 3000:3000      

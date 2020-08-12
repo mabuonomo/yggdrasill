@@ -1,6 +1,6 @@
 # 🌲 🐋 Yggdrasill 
 
-Yggdrasill is a super set of tools that simplify development and deployment in a node environment, with zero configuration. All tools are dockerized.
+**Yggdrasill** is a super set of tools that simplify development and deployment in a node environment, NestJS (https://docs.nestjs.com/) in particular, with zero configuration. All tools are dockerized.
 
 ## Phyilosophy
 

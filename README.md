@@ -4,7 +4,7 @@
 
 ## Phyilosophy
 
-What's Yggdrasill? Yggdrasil (from Old Norse Yggdrasill) is an immense mythical tree that plays a central role in Norse cosmology, where it connects the Nine Worlds. (https://en.wikipedia.org/wiki/Yggdrasil).
+_What's Yggdrasill? Yggdrasil (from Old Norse Yggdrasill) is an immense mythical tree that plays a central role in Norse cosmology, where it connects the Nine Worlds. (https://en.wikipedia.org/wiki/Yggdrasil)._
 
 The purpose of this repository is to unify and simplify the use of some very useful tools, such as:
 

@@ -1,5 +1,5 @@
 npm_init:
-	if [ -d "./node_modules" ]; then echo "node_modules found"; else ${docker} ${container} npm ci; fi
+	if [ -d "./node_modules" ]; then echo "node_modules found"; else ${docker} ${container} npm install; fi
 	
 npm_format:
 	${docker} ${container} npm run format

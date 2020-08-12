@@ -1,4 +1,5 @@
 docker = docker-compose run --rm -u 1000
+dockerMain = docker-compose run -w /main --rm -u 1000
 container = utils
 
 include makefiles/prisma.mk

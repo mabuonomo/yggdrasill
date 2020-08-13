@@ -1,7 +1,7 @@
 SCHEMA_PATH=/main/schema/grpc
 
-rm -R $SCHEMA_PATH/grpc/dist/* || true
-mkdir $SCHEMA_PATH/grpc/dist || true
+rm -R $SCHEMA_PATH/dist/* || true
+mkdir $SCHEMA_PATH/dist || true
 
 # nestjs
 protoc -I $SCHEMA_PATH \

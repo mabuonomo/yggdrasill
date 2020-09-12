@@ -7,4 +7,4 @@ mkdir $SCHEMA_PATH/grpc/dist || true
 protoc -I $SCHEMA_PATH \
 --plugin=./node_modules/.bin/protoc-gen-ts_proto \
 --ts_proto_out=$SCHEMA_PATH/dist $SCHEMA_PATH/*.proto \
---ts_proto_opt=outputEncodeMethods=false,outputJsonMethods=false,outputClientImpl=false,nestJs=true,addGrpcMetadata=true
+--ts_proto_opt=outputEncodeMethods=false,outputJsonMethods=false,outputClientImpl=false,nestJs=true,addGrpcMetadata=true,useOptionals=true
